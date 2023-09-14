@@ -1,2 +1,1 @@
 # informatyka
-Andrzej Iwaszkiewicz
