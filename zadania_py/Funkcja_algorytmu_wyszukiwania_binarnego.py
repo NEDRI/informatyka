@@ -15,3 +15,4 @@ while l <= p:
         p = sr + 1
     sr = (l+p)/2
 print(l,p,sr)
+https://github.com/PiskorowskiJakub/programming-course-cpp/blob/main/2-algorytmika/2-3-algorytmy-wyszukiwania/2-3-02-wyszukiwanie-binarne/README.md
