@@ -4,7 +4,7 @@ szukana = input("szukana")
 l = 0
 p = 15
 sr = l+p/2
-sr int(sr)
+sr = int(sr)
 
 while l <= p:
     if tab[sr] == szukana:
