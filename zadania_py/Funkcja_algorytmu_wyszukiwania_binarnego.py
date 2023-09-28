@@ -25,4 +25,3 @@ if pozycja != -1:
     print(f"Liczba {szukana_liczba} jest w {pozycja}")
 else:
     print("nie znalazlo")
-Funkcja_algorytmu_wyszukiwania_binarnego
