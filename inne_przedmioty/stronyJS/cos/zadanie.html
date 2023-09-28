@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <label for="rok_urzytkownika">rok_urzytkownika:</label>
+    <input type="number" id="rok_urzytkownika">
+    <br>
+    <button onclick="funkcja1()">Submit</button>
+    <p id="rok_urzytkownika_out"></p>
+
+    <script>
+       function funkcja1() { 
+        const rok_urzytkownika = document.getElementById('rok_urzytkownika');
+        let rok_urzytkownika = rok_urzytkownika.value;
+        rok_urzytkownika=parseInt(rok_urzytkownika);
+        console.log(rok_urzytkownika) 
+        
+        if (rok_urzytkownika >= 2023){
+            const pokaz_wiek = document.getElementById('output');
+            pokaz_wiek.textContent = "pelnoletni";
+        }
+        else
+        {
+            const pokaz_wiek = document.getElementById('output');
+            pokaz_wiek.textContent = "nie pelnoletni";
+        
+        }
+    }
+
+
+    </script>
+
+</body>
+
+</html>

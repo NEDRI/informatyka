@@ -1,0 +1,17 @@
+    1 <button style plik.css> 1
+    2 <bg Yellow>
+3 nie wiem
+4 nie wiem
+5 nie wiem
+6 nie wiem
+    7 albo Red albo 000,255,000 1 
+    8 http https 2
+    9 to plik typu html w którym możemy ustawić format strony
+    10 <br>
+11 nie wiem
+12 nie wiem
+13 nie wiem
+14 nie wiem
+15 nie wiem
+
+4 

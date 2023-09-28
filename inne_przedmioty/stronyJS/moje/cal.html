@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <label for="Inlb1">lb1:</label>
+    <input type="number" id="Inlb1">
+    <br>
+    <label for="Inznak">znak:</label>
+    <input id="Inznak">
+    <br>
+    <label for="Inlb2">lb2:</label>
+    <input type="number" id="Inlb2">
+
+    <br>
+    <button onclick="displayName()">Submit</button>
+    <p id="output"></p>
+    <p id="znak"></p>
+
+ 
+
+    <script>
+
+        function displayName() {
+            const Inlb1 = document.getElementById('Inlb1');
+            const Inznak = document.getElementById('Inznak');
+            const Inlb2 = document.getElementById('Inlb2');
+           
+            let lb1 = Inlb1.value;
+            let znak = Inznak.value;
+            let lb2 = Inlb2.value;
+            lb1=parseInt(lb1);
+            lb2=parseInt(lb2);
+
+            let wynik = lb1 + lb2;
+
+            const pokaz_wynik = document.getElementById('output');
+            pokaz_wynik.textContent = wynik;
+
+            console.log(znak, typeof(znak))
+            const pokaz_znak = document.getElementById('znak');
+            pokaz_znak.textContent = znak;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
