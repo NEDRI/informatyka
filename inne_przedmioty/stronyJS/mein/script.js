@@ -19,3 +19,5 @@ for (let q=0; q < 5; q++) {
 for(let w=0; w <= 10; w++){
     console.log(w + "linia")
 }
+
+//zad5
