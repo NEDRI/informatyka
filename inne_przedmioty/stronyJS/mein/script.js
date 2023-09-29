@@ -6,9 +6,12 @@ for (let i=0; i <= 10; i++) {
 }
 
 //zad2
-//let a = prompt("podaj a: ")
-//let b = prompt("podaj b: ")
-//console.log(a,b)
+let z= 5
+let x=10
+for(let c=z; c <=x; c++){
+    console.log(c)
+}
+
 
 //zad3
 for (let q=0; q < 5; q++) {
