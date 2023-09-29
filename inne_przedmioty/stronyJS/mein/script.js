@@ -52,7 +52,7 @@ for (let m = 1; m <= 10; m++) {
     }
   }
 
-//zad8  // Możesz zmieniać wysokość trójkąta
+//zad8
 let wysokoscTrojkata = 5;
 
 for (let p = 1; p <= wysokoscTrojkata; p++) {
