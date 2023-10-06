@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+		<script>
+            /*debuger edge: więcej narzędzi
+			narzędzia programistyczne,
+			zakładka Console*/
+        </script>
+    </head>
+    <body>
+        <script>
+/*	function wizytowka()
+	//funkcja bez parametrów
+	//nie zwraca wartości
+{document.write('-----------------<br>');
+document.write('  Jan Nowak       <br>');
+document.write('-----------------<br>');
+};
+	wizytowka();
+	document.write('<br>');
+	document.write('<br>');
+	wizytowka();*/
+	
+function wizytowka1(s)
+	//funkcja z parametrem
+	//nie zwraca wartości
+{document.write('-----------------<br>');
+document.write(s+'<br>');
+document.write('-----------------<br>');
+};
+s='Jan Chrzan';
+wizytowka1('Jan Nowak');
+wizytowka1(s);
+napis=prompt('podaj dane');
+wizytowka1(napis);
+function suma(a,b)
+{c=(a+b)*Math.PI; 
+return c;};
+// funkcja z parametrem zwraca wartość
+x=suma(5,6);
+document.write(x+'<br>');
+document.write(suma(100,250));
+
+
+
+        </script>
+    </body>
+</html>
