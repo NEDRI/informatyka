@@ -14,4 +14,3 @@ n = int(input("Podaj wykładnik: "))
 
 wynik = szybkie_potegowanie(a, n)
 print(f"{a} do potęgi {n} wynosi: {wynik}")
-
