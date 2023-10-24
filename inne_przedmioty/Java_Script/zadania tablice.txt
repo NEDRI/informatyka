@@ -1,0 +1,13 @@
+a=Math.random(); Generuje liczbę losową z przedziału <0;1)
+Aby wygenerować liczbę z zakresu <1;100): a=Math.floor(Math.random()*100+1));
+Math.floor(x) Zaokrągla w dół liczbę x do liczby całkowitej.
+
+wylosuj tablicę 50 elementów z zakresu 1 do 100
+
+Ile jest liczb podzielnych przez 3?
+Wyświetl liczby, które maja parzyste indeksy.
+Ile jest liczb wiekszych od 15?
+Znajdź najmniejszy element tablicy i podaj jego indeks.
+Ile jest liczb dwucyfrowych?
+Ile liczb ma parzystą sumę cyfr w zapisie?
+Wyświetl liczby, których wszystkie cyfry są parzyste
