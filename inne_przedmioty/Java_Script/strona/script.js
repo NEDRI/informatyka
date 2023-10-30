@@ -20,6 +20,6 @@ document.write("losowa liczba od 2 do 12 to: " + tablica1)
 //zad3
 tablica2= []
 while(i=0,i<=25,i++){
-  tablica1.push(Math.floor(Math.random() * 1) + 2);
+  tablica1.push(Math.floor(Math.random() * 11) + 2);
 }
 
