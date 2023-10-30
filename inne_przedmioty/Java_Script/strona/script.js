@@ -15,11 +15,18 @@ function obliczPoleIObwod() {
 //zad2
 tablica1 = []
 tablica1.push(Math.floor(Math.random() * 11) + 2);
-document.write("losowa liczba od 2 do 12 to: " + tablica1)
+document.write("losowa liczba od 2 do 12 to: " + tablica1 + "<br>")
 
 //zad3
-tablica2= []
-while(i=0,i<=25,i++){
-  tablica1.push(Math.floor(Math.random() * 11) + 2);
+tablica2 = []
+let b = 0; 
+while (b < 25) {
+  tablica2.push(Math.floor(Math.random() * 11));
+  console.log(tablica2)      
+  b++;
 }
+document.write("tablica 25 0/10: " + tablica2)
 
+//zad4
+let orzel = 0
+let reszka = 0
