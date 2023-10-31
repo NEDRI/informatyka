@@ -25,8 +25,27 @@ while (b < 25) {
   console.log(tablica2)      
   b++;
 }
-document.write("tablica 25 0/10: " + tablica2)
+document.write("tablica 25 0/10: " + tablica2 + "<br>")
 
 //zad4
 let orzel = 0
 let reszka = 0
+for (let a = 0; a < 100; a++) {
+  let s = Math.floor(Math.random() * 2);
+  if (s === 0) {
+      orzel++;
+  } else {
+      reszka++;
+  }
+}
+document.write("reszka: "+ reszka + "<br>" + "orzel: " + orzel + "<br>")
+
+//zad5
+for (let p = 0; p < 100; p++) {
+  let o = Math.floor(Math.random() * 2);
+  if (o === 0) {
+      orzel++;
+  } else {
+      reszka++;
+  }
+}
