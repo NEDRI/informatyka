@@ -41,11 +41,25 @@ for (let a = 0; a < 100; a++) {
 document.write("reszka: "+ reszka + "<br>" + "orzel: " + orzel + "<br>")
 
 //zad5
+let r1 
+let r2 
+let r3
+let r4
+let r5
+let r6
 for (let p = 0; p < 100; p++) {
-  let o = Math.floor(Math.random() * 2);
-  if (o === 0) {
-      orzel++;
-  } else {
-      reszka++;
-  }
+  let o = Math.floor(Math.random() * 5) + 1;
+  if (o === 1) {
+      r1++;
+  } if (o == 2) {
+      r2++;
+  } if (o == 2) {
+    r2++;
+  } if (o == 2) {
+    r2++;
+  } if (o == 5) {
+    r5++;
+  } if (o == 6) {
+    r6++;
+  }  
 }
