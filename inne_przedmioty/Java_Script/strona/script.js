@@ -6,10 +6,10 @@ function obliczPoleIObwod() {
       var poleKola = Math.PI * Math.pow(promien, 2);
       var obwodKola = 2 * Math.PI * promien;
 
-      document.getElementById("wynik").innerHTML = "Pole kola: " + poleKola + "<br>Obwód kola: " + obwodKola;
+      document.getElementById("wynik").innerHTML = "Pole kola: " + poleKola + "<br>Obwod kola: " + obwodKola;
   } else {
       document.getElementById("wynik").innerHTML = "zly promien.";
-  }
+  }+ "1:" + r1 + "<br>"
 }
 
 //zad2
