@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> Strona CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="pierwszy">
+            Tresc 1
+        </div>
+        <div id="drugi">
+            Tresc 2
+        </div>
+        <img src="img/banner.jpg">
+        <!-- Komentarz -->
+    </body>
+</html>
+
+
+Plik style:
+
+#pierwszy
+{
+    background: red;
+    font-family:Centaur;
+    text-align:right;
+    height:100px;
+    width: 200px;
+    border:2px solid black;
+    margin:10px;
+}
+
+#drugi {
+    background: #cccccc;
+    font-family: Centaur;
+    text-align: right;
+    height: 200px;
+    width: 100px;
+    float: left;
+}
+
+img {
+    height: 200px;
+    float: left;
+}
+
+body{
+    background-color:blue;
+}

@@ -1,0 +1,115 @@
+<!--Sekcja służąca do definiowania pliku html, w środku atrybut z językiem strony-->
+<html lang="pl">
+	<!--Sekcja służąca do definiowania ustawień strony-->
+	<head> 
+		<!--Tytuł strony widoczny w karcie i zakładce-->
+		<title>A Meaningful Page Title</title>
+		<!--Odnośnik do zewnętrznego arkusza stylów:-->
+		<link rel="stylesheet" href="mystyle.css">
+		<!--Rodzaj kodowania znaków na stronie-->
+		<meta charset="UTF-8">
+		<!--Słowa kluczowe dla silników:-->
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<!--Opis strony -->
+		<meta name="description" content="Free Web tutorials">
+		<!--Informacja o autorze-->
+		<meta name="author" content="John Doe">
+		<!--Informacja o użytym edytorze-->
+		<meta name="generator" content="Visual Studio">
+		<!-- Odświeżanie dokumentu co 30 sekund, można dodać równiez przekierowanie do url-->
+		<meta http-equiv="refresh" content="30">
+		<!--Ustawienie viewportu, aby strona skalowała się dobrze na wielu urządzeniach np.
+		width=device-width strona ma skalować się zgodnie z rozmiarem urzadzenia
+		initial-scale=1.0 domyślny zoom na stronie ma wynosić 1 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Ikona strony-->
+		<link rel="shortcut icon" href="adres ikony">
+
+	</head>
+
+	<!--Sekcja służąca do tworzenia zawartości strony-->
+	<body>
+		Kontenery podstawowe:
+		<header> <!-- Sekcja służąca do zawierania listy linków nawigacji np. w mapa strony --> </header>
+		<nav> <!-- Sekcja służąca do zawierania listy przycisków nawigacji np. w menu --> /</nav>
+		<section> </section> <!-- Sekcja służąca do zawierania zgrupowanej treści -->
+		<content> </content> <!-- Sekcja służąca do zawierania treści -->
+		<footer> <!-- Sekcja służąca do zawierania sropki strony -->  </footer>
+
+		Kontenery zaawansowane:
+		<navbar> <!-- Sekcja służąca do zawierania listy linków nawigacji np. w mapa strony --> </navbar>
+		<address> <!-- Sekcja służąca do zawierania kontaktu --> </address>
+		<ins> <!-- Sekcja służąca do zawierania informacji o nowo dodanych elementach --> </ins>
+		<del> <!-- Sekcja służąca do zawierania informacji o ostatnio usuniętych elementach --> </del>
+
+		Organizatory treści:
+		<p> <!-- Nowa linia z akapitem --> </p> 
+		<h1> <!-- Tytuł największy (są od 1 do 6) --> </h1> 
+		<h6> <!-- Podtytuł najmniejszy (są od 1 do 6) --> </h6> 
+		<div> <!-- Blokowy kontener na treść --> </div>
+		<span> <!-- Nieblokowy kontener na treść --> </span>
+		<table><th, tr, td, thead, tbody, tfoot, caption, col, colgroup><table> <!-- Tabela -->
+
+
+		Dodatkowo:
+		<br> <!-- break line, enter -->
+		<hr> <!-- thematic break, linia pozioma -->
+		<b></b> <!-- bold, tekst pogubiony -->
+		<i></i> <!-- italic, tekst pochyły -->
+		<u></u> <!-- underline, tekst podkreślony -->
+		<s></s> <!-- strike, tekst przekreślony -->
+		<em></em> <!-- emfaza, tekst wyróżniony -->
+		<sup></sup> <!-- superscript, tekst w indeksie górnym -->
+		<sub></sub> <!-- subscript, tekst w indeksie dolnym -->
+		<strong></strong> <!-- strong, tekst wyróżniony z boldem -->
+		<small></small> <!-- strong, tekst wyróżniony z pomniejszeniem -->
+		<pre></pre> <!-- preformatowany, tekst z wyróżnioną czcionką z uwzględnianiem spacji, tabów i eneterów -->
+		<code></code> <!-- kod, tekst preformatowany z możliwością wproadzania znaków specjalnych -->
+		<kdb></kdb> <!-- keyboard, to samo co code-->
+		<samp></samp> <!-- sample, to samo co code -->
+		<var></var> <!-- variable, tekst pochyły, stosowany do zmiennych np. matematycznych -->
+		<cite></cite> <!-- cytat, tekst napisany kursywą stosowany do cytowania -->
+		<q></q> <!-- quote, krótki cytat -->
+		<blockquote></blockquote> <!-- bok cytatowy -->
+		<abbr></abbr> <!-- bok do skrótów, akronimów -->
+		<dfn></dfn> <!-- bok do wprowadzania definicji -->
+		<DL, DT, DD> <!-- słownik, lista opisowa -->
+		<UL, OL, LI> <!-- wykaz, lista punktowa, numerowana -->
+
+
+		<font></font>  <!-- z atrybutami pozwala wpływać na wygląd tekstu: color, size, face 
+		- znacznik ten nie jest już stosowany w nowej wersji HTML-->
+
+		Multimedia:
+		<img> <!-- Pozwala dodać obrazek -->
+		<embed> <!-- Pozwala dodać dźwięk -->
+		<object> <!-- Pozwala dodać obiekt np. odtwarzacz multimediów -->
+		<iframe> <!-- Pozwala dodać ramkę np. z video, mapą -->
+		<a> </a>  <!-- Pozwala dodać hiperłącze w tym https, mailto, ftp, gg, skype, news, ssh, javascript i wiele innych -->
+
+		Formularze:
+		<form></form> <!-- Sekcja formularza -->
+		<input> <!-- Różnego rodzaju pola do wprowadzania -->
+		<button> <!-- Przycisk -->
+		<select, option, optgroup> <!-- Menu rozwijane -->
+		<textarea> <!-- Duże pole testowe -->
+		<fieldset></fieldset> <!-- Sekcja do grupowania elementów formularza -->
+		<legend></legend> <!-- Legenda sekcji grupującej -->
+
+		Przydatne atrybuty do róznych pól:
+		(Atrybuty zapisujemy zawsze w formie nazwa="wartość")
+		alt - tekst alterantywny
+		href - link do stronu, maila (mailto:)
+		src - źródło do obrazka
+		align - wypozycjonowanie elementu
+		width - ustawienie szerokości elementu
+		height - ustawienie wysokości elementu
+		style - lokalny css tylko dla danego elementu
+		id - okreslenie identyfikatora elementu
+		class - okreslenie klasy elementu
+	</body>
+</html>
+
+<script> //Znajdziesz tutaj kod w JavaScript </script>
+<?php //Znajdziesz tutaj kod w PHP ?>
+<style> //Znajdziesz tutaj kod w CSS  </style>
