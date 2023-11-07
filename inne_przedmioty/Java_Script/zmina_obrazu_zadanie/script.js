@@ -1,0 +1,1 @@
+// obraz ma sie zmieniac co 1 sec i ma byc przycisk ktury to zaczyna start i stop
