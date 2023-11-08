@@ -1,0 +1,54 @@
+<head>
+	<meta charset="utf-8">
+</head>
+<b>Instrukcja do zadania 1 - Poprawa</b>
+<p>
+	Każdy myślnik to jeden punkt. Zdobądź jak najwięcej. <br> <br> Wytyczne:
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> strona posiada nagłówek (header), pasek z zakładkami (nav), blok środkowy z dwoma blokami obok siebie (div1 i div2) oraz stopkę (footer) - na wzór tej strony;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()">  header i footer zajmują całą szerokość strony, nav i środkowe elementy 80% strony;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()">  header posiada w tle powtorzony obrazek "baner.jpg";
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> nav posiada zakładki z działającymi hiperłączami;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> zakładki posiadają tekst bez podkreślenia;  
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> zakładki posiadają margines wewnętrzny i ramkę;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> zakładki zmieniają kolor tła i styl czcionki po najechaniu myszą;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> bloki główne są łącznie wycentrowane;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()">  div1 zajmuje 1/3 dostępnego obszaru, a div2 zajmuje 2/3;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> div1 posiada listę numerowaną;
+	
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> div2 posiada nagłówek pierwszego stopnia oraz paragraf z tekstem przyciągnięte do lewej strony;
+	
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> div2 posiada przycisk z napisem "Dowiedz się więcej" przyciągnięty do prawej strony;
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> stopka zawiera pogrubiony oraz wycentrowany podpis autora, napisany czcionką "consolas";
+	
+	<br><input type="checkbox" name="zad" onchange="checkboxes()">  nagłówek jest "ruchomy" - przesuwa się razem z przewijaniem strony
+
+	<br><input type="checkbox" name="zad" onchange="checkboxes()"> strona posiada favicon z grafiki i nazwie "ikona.png"
+	
+
+
+	<br><br> Brak oddanego na lekcji zadania skutkuje oceną niedostateczną. Czerwona ramka na zdjęciu jest informacyjna, nie podlega zadaniu. Teksty treści nie muszą być identyczne. 
+</p>
+<div id="wynik" style="background-color:#ffabab; width:300px; height:40px; text-align:center;">
+	Zaznacz punkt aby uzyskać wynik
+</div>
+<script>
+	function checkboxes() {
+		var points = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+		document.getElementById("wynik").innerHTML = "Uzbieranych punktów " + points + "<br>Wynik " + parseInt(points/15*100) +"%";
+	}
+</script>
+
+<br>
+<br>
+<img src="zadanie.JPG" width="1000">
