@@ -3,21 +3,31 @@
 <head>
     <meta charset="utf-8" />
     <title>zadanie</title>
-    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p id="text" style="display:none">Checkbox is CHECKED!</p>
+<p id="text">Checkbox is CHECKED!</p>
 <input type="checkbox" id="myCheck" onclick="myFunction()">
-<label for="myCheck">Śmietanka:</label> 
+<br>
 <input type="checkbox" id="ch1" >
-<label for="myCheck">Cukier:</label> 
+<label for="myCheck">Śmietanka</label> 
 <input type="checkbox" id="ch2" >
-<label for="myCheck">Mleko:</label> 
+<label for="myCheck">Cukier</label> 
 <input type="checkbox" id="ch3" >
+<label for="myCheck">Mleko</label> 
+<input type="checkbox" id="ch4" >
+<label for="myCheck">Cynamon</label> 
 <input type ='button' onClick='f()' value='Zamów'>
 <h1 id='w'></h1>
-<script>
 
-</script>
+<select id="kU" onchange="pk()">
+<option value="aqua">blekit</option>
+<option value="red">czer</option>
+<option value="white">biel</option>
+<option value="orange">pom</option>
+
+</select>
+
 </body>
 </html>
