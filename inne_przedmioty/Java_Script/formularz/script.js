@@ -22,13 +22,21 @@ function f(){
     if (c1.checked) {z=z+"napis1, "};
     if (c2.checked) {z=z+"napis2, "};
     if (c3.checked) {z=z+"napis3, "};
-    if (c4.checked) {z=z+"napis4 "};
+    if (c4.checked) {z=z+"napis4 ", document.getElementById("a").style.background='rgb(209,105,29)'};
     el = document.getElementById("w");
     el.innerHTML= z; 
 
 }
 function pk(){
     w =document.getElementById("kU").value;
-    el = document.getElementById("p");
+    el = document.getElementById("a");
     el.style.background = w;
+    ell = document.getElementById("k");
+    ell.innerHTML=w;
+}
+function p(){
+    r=Math.floor(Math.random()*255)
+    g=Math.floor(Math.random()*255)
+    b=Math.floor(Math.random()*255)
+    //document.getElementById("a").style.background='rgb('+r+','+g+','+b+')';
 }
