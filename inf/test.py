@@ -1,15 +1,11 @@
-#https://github.com/PiskorowskiJakub/programming-course-cpp/blob/main/2-algorytmika/2-7-algorytmy-iteracyjne/2-7-03-dec-to-bin/README.md
+tab = [0] * 31
+i = 0
 
-def funkcja(n):
- tab  = [15]
- i = 0
+liczba = int(input("Podaj liczbę dziesiętną: "))
+while liczba != 0:
+    tab[i] = liczba % 2
+    liczba = liczba // 2
+    i += 1
 
- while n != 0:
-    tab[i] = n % 2
-    i=i+1
-    n=n/2
-
-    
-
-n = int(input("podja liczbe dziesietna: "))
-funkcja(n)
+for j in range(i - 1, -1, -1):
+    print(tab[j], end="")
