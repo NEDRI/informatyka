@@ -7,3 +7,26 @@ table, th, td{
 .p:hover{
     background-color: gray;
 }
+body{
+    background-color: whitesmoke;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      
+    }
+    .przy{
+        display: block;
+    }
+  }
+.table{
+    position: relative;  
+}
+.przy{
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
