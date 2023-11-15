@@ -1,11 +1,9 @@
-tab = [0] * 31
-i = 0
-
-liczba = int(input("Podaj liczbę dziesiętną: "))
-while liczba != 0:
-    tab[i] = liczba % 2
-    liczba = liczba // 2
-    i += 1
-
-for j in range(i - 1, -1, -1):
-    print(tab[j], end="")
+def przliczanie(a):
+    tab = [0]
+    while a != 0:
+        tab.append(a % 2)
+        a = a // 2
+    return tab
+liczba = int(input("Podaj liczbe dziesietna: "))
+wynik = przliczanie(liczba)
+print(f"Liczba {liczba}  po zamianie na postac binarna: {wynik}")
