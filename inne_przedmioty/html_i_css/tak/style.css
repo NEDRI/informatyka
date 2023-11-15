@@ -12,8 +12,12 @@ body{
 }
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+        color: whitesmoke;
+        background-color: black;
       
+    }
+    table, th, td{
+        border: 1px solid whitesmoke;
     }
     .przy {
         position: fixed;
@@ -21,7 +25,6 @@ body{
         right: 0;
         margin: 10px
     }
-
     .przy button {
         display: block;
         margin: 5px;
