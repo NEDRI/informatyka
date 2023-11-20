@@ -5,6 +5,6 @@ def przliczanie(a):
         tab.append(a % 2)
         a = a // 2
     return tab
-liczba = int(input("Podaj liczbe dziesietna: "))
+liczba = int(input("Podaj liczbe: "))
 wynik = przliczanie(liczba)
-print(f"Liczba {liczba}  po zamianie na postac binarna: {wynik}")
+print(f"Liczba {liczba}  po zamianie: {wynik}")
