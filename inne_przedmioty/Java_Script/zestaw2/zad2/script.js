@@ -8,6 +8,5 @@ function oblicz(){
     suma = a+b
     c = document.getElementById("c");
     if (c.checked) {w = suma + 2000};
-    console.log(w)
     document.getElementById("wynik").innerHTML=w;
 }
