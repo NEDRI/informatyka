@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>strona</title>
+</head>
+<body>
+    <div id="cent">
+        <h1>Tworzenie postaci</h1>
+        <form>
+            <a id="imiepostaci"></a>
+            <a class="znika">Podaj imie</a>
+            <input class="znika" type="text" id="imie">
+            <br>
+            <a>Mezczyzna: </a>
+            <input id="mm" type="radio" name="p">
+            <a>Kobieta: </a>
+            <input id="kk" type="radio" name="p">
+            <br>
+            <a>Wlosy: </a>
+            <a id="numwlosy">0</a>
+            <button class="znika" id="wlosy+">+</button>
+            <button class="znika" id="wlosy-">-</button>
+            <br>
+            <a>Twarz: </a>
+            <a id="numtwarz">0</a>
+            <button class="znika" id="twarz+">+</button>
+            <button class="znika" id="twarz-">-</button>
+            <br>
+            <a>Cialo: </a>
+            <a id="numcialo">0</a>
+            <button class="znika" id="cialo+">+</button>
+            <button class="znika" id="cialo-">-</button>
+            <br>
+            <a>Nogi: </a>
+            <a id="numnogi">0</a>
+            <button class="znika" id="nogi+">+</button>
+            <button class="znika" id="nogi-">-</button>
+            <br><br>
+            <button style="float: left;" class="znika" id="tak" onkeyup="sw()">potwierdz storzenie wygladu</button>
+            <br>
+        </form>
+        <h3>Dodatkowe informacjie:</h3>
+        <form>
+            <select id="wpostaci" onchange="wp()">
+                <option value="wojownik">wojownik</option>
+                <option value="mag">mag</option>
+                <option value="lucznik">lucznik</option>
+            </select>
+            <br>
+            <br>
+            <div id="staty">
+                <a>CIAŁO</a>
+                <input maxlength="3" type="number">
+                <br>
+                <a>EMOCJE</a>
+                <input maxlength="3" type="number">
+                <br>
+                <a>FACH</a> 
+                <input type="number" maxlength="3">
+                <br>
+                <a>GRACJA</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>REAKCJE</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>ROZUM</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>TEMPO</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>WOLA</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>FART</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>PP</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Bieg</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Skok</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>PZ</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>PW</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Udźwig</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Zdr.</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Pięść</a>
+                <input type="number" maxlength="3">
+                <br>
+                <a>Kop</a>
+                <input type="number" maxlength="3">
+                <br>    
+            </div>
+            <br>
+            <input style="font-size: medium;" type="submit" value="Stworz postaci">
+        </form>
+    </div>
+</body>
+</html>
