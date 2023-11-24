@@ -38,3 +38,14 @@ function change_border(){
         img.style.border = "none"
     }
 }
+// listStyle = 'disc' albo 'circle' albo 'square'
+function radio(p){
+    lista=document.getElementById("lista2")
+    if (p == "dysk"){
+        lista.style.listStyle = 'disc';
+    } else if (p == "kwadrat"){
+        lista.style.listStyle = 'circle';
+    } else if (p == "okrąg"){
+        lista.style.listStyle = "square";   
+    }
+}

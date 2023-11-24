@@ -106,10 +106,20 @@
         function change_border(){
             ob=document.getElementById("box")
             img=document.getElementById("img")
-            if (ob == "check"){
-                img.style.border = '1px solid white'
-            } else{
-                img.style.border = "none"
+            if (box.checked) {
+                img.style.border = '2px solid white'; 
+            } else {
+                img.style.border = 'none';
+            }
+        }
+        function radio(p){
+            lista=document.getElementById("lista2")
+            if (p == "dysk"){
+                lista.style.listStyle = 'disc';
+            } else if (p == "kwadrat"){
+                lista.style.listStyle = "square";   
+            } else if (p == "okrąg"){
+                lista.style.listStyle = 'circle';
             }
         }
                 
