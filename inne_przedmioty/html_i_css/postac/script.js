@@ -1,5 +1,6 @@
-function sw(){
-    imie=document.getElementById("imie").value;
+function naimie(){
+    imie =document.getElementById("imie");
+    
     console.log(imie)
-    document.write(imie)
+    document.getElementById("imiepostaci").innerHTML = imie
 }
