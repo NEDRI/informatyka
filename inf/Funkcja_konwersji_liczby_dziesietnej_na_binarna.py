@@ -1,4 +1,5 @@
 #https://github.com/PiskorowskiJakub/programming-course-cpp/blob/main/2-algorytmika/2-7-algorytmy-iteracyjne/2-7-03-dec-to-bin/README.md
+
 def funkcja(liczba):
     tab = [0] * 31  
     i = 0 
