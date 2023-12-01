@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+        <script src="jsnb.js"></script>
+		<script>
+	
+        </script>
+	</head>
+    <body onload="braki()">
+<h2>ee_09_2022_06_04</h2>
+        <details>
+            <summary>Wymagania dotyczące skryptu:</summary>
+            <ul>
+                <li>Składa się z funkcji aktualizującej i zamawiającej obsługujących przyciski oraz funkcji
+                    zaznaczającej
+                    braki.</li>
+                <li>Na początku działania skryptu jest wywoływana funkcja zaznaczająca braki oraz zainicjowana jest
+                    wartością 0 zmienna przechowująca id zamówienia</li>
+                <li>Funkcja zaznaczająca braki – obraz 3:</li>
+                <ul>
+                    <li>Sprawdza wartości w kolumnie „Dostępna Ilość” dla każdego wiersza tabeli</li>
+                    <li>Jeżeli wartość jest równa 0, tło tej komórki zmienione jest na czerwone</li>
+                    <li>Jeżeli wartość jest z przedziału [1, 5], tło tej komórki zmienione jest na żółte</li>
+                    <li>W każdym innym przypadku tło komórki jest koloru Honeydew</li>
+                </ul>
+                <li>Funkcja aktualizująca – obraz 4:</li>
+                <ul>
+                    <li>Wywoływana po przyciśnięciu przycisku w danym wierszu tabeli</li>
+                    <li>Wyświetla okno z polem do wpisania wartości, podpisane: „Podaj nową ilość:”</li>
+                    <li>Podaną w oknie wartość wpisuje do odpowiedniego wiersza, kolumny „Dostępna ilość”</li>
+                    <li>Wywołuje funkcję zaznaczającą braki</li>
+                </ul>
+                <li>Funkcja zamawiająca – obraz 5:</li>
+                <ul>
+                    <li>Zwiększa o jeden id zamówienia
+                    </li>
+                    <li>Wyświetla komunikat o treści: „Zamówienie nr: [id zamówienia] Produkt: [nazwa produktu]”.
+                        Pola zapisane w [] wypełniane są automatycznie wartością id_zamowienia oraz nazwą produktu
+                        z kolumny „Produkt” danego wiersza tabeli</li>
+                </ul>
+        </details>
+        <table>
+            <tr>
+                <th>Produkt</th>
+                <th>Jednostka</th>
+                <th>Dostępna ilość</th>
+                <th>Aktualizacja</th>
+                <th>Zamówienie</th>
+            </tr>
+            
+            <tr>
+                <td>Skrętka U/UTP drut</td>
+                <td>metr</td>
+                <td id="p1">20</td>
+                <td><button type="button" onclick="aktualizuj('p1')">Aktualizuj</button></td>
+                <td><button type="button" onclick="zamow('Skrętka U/UTP drut')">Zamów</button></td>
+            </tr>
+            <tr>
+                <td>Skrętka U/UTP linka</td>
+                <td>metr</td>
+                <td id="p2">2</td>
+                <td><button type="button" onclick="aktualizuj('p2')">Aktualizuj</button></td>
+                <td><button type="button" onclick="zamow('Skrętka U/UTP linka')">Zamów</button></td>
+            </tr>
+            <tr>
+                <td>Wtyki 8P8C</td>
+                <td>sztuki</td>
+                <td id="p3">10</td>
+                <td><button type="button" onclick="aktualizuj('p3')">Aktualizuj</button></td>
+                <td><button type="button" onclick="zamow('Wtyki 8P8C')">Zamów</button></td>
+            </tr>
+            <tr>
+                <td>Moduły Keystone</td>
+                <td>sztuki</td>
+                <td id="p4">30</td>
+                <td><button type="button" onclick="aktualizuj('p4')">Aktualizuj</button></td>
+                <td><button type="button" onclick="zamow('Moduły Keystone')">Zamów</button></td>
+            </tr>
+        </table>
+		</body>
+		</html>
