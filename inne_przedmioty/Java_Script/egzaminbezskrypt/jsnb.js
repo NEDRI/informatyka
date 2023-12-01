@@ -55,6 +55,4 @@ function braki(){
         p4 = document.getElementById("p4")
         p4.style.backgroundColor="Honeydew"   
     }
-
-    
 }
