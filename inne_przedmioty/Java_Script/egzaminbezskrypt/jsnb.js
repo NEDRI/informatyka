@@ -54,3 +54,10 @@ function braki(){
         p4.style.backgroundColor="Honeydew"   
     }
 }
+function aktualizuj(p1f){
+    p1i = prompt("podaj wartosc dla p1:");
+    console.log(p1i)
+    p1p = parseInt(p1i)
+    p1 = document.getElementById("p1")
+    p1.innerHTML=p1p
+}
