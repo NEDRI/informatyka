@@ -92,8 +92,6 @@ function zamow(prod){
     i = i +1
     console.log(i)
     idz = document.getElementById("idz")
-    document.write("Zamówienie nr: " + i + " Produkt: " + prod)
-    //idz.innerHTML= "Zamówienie nr: " + i + " Produkt: " + prod
-    pordid = document.getElementById("pordid")
-    pordid.innerHTML=prod
+    idz.innerHTML= "Zamówienie nr: " + i + " Produkt: " + prod
+    
 }
