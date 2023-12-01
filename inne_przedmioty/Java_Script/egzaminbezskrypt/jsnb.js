@@ -54,11 +54,35 @@ function braki(){
         p4.style.backgroundColor="Honeydew"   
     }
 }
-function aktualizuj(p1f){
+function aktualizujp1(p1f){
     p1i = prompt("podaj wartosc dla p1:");
     console.log(p1i)
     p1p = parseInt(p1i)
     p1 = document.getElementById("p1")
     p1.innerHTML=p1p
+    braki()
+}
+function aktualizujp2(p1f){
+    p2i = prompt("podaj wartosc dla p2:");
+    console.log(p2i)
+    p2p = parseInt(p2i)
+    p2 = document.getElementById("p2")
+    p2.innerHTML=p2p
+    braki()
+}
+function aktualizujp3(p1f){
+    p3i = prompt("podaj wartosc dla p3:");
+    console.log(p3i)
+    p3p = parseInt(p3i)
+    p3 = document.getElementById("p3")
+    p3.innerHTML=p3p
+    braki()
+}
+function aktualizujp4(p1f){
+    p4i = prompt("podaj wartosc dla p4:");
+    console.log(p4i)
+    p4p = parseInt(p4i)
+    p4 = document.getElementById("p4")
+    p4.innerHTML=p4p
     braki()
 }
