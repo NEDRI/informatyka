@@ -86,3 +86,14 @@ function aktualizujp4(p1f){
     p4.innerHTML=p4p
     braki()
 }
+i = 0
+function zamow(prod){
+    console.log(prod)
+    i = i +1
+    console.log(i)
+    idz = document.getElementById("idz")
+    document.write("Zamówienie nr: " + i + " Produkt: " + prod)
+    //idz.innerHTML= "Zamówienie nr: " + i + " Produkt: " + prod
+    pordid = document.getElementById("pordid")
+    pordid.innerHTML=prod
+}
