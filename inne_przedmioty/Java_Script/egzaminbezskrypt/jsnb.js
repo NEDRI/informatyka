@@ -23,7 +23,6 @@ function braki(){
         p1 = document.getElementById("p1")
         p1.style.backgroundColor="Honeydew"   
     }
-
     if (p2v === 0) {
         p2 = document.getElementById("p2")
         p2.style.backgroundColor="red"
@@ -34,7 +33,6 @@ function braki(){
         p2 = document.getElementById("p2")
         p2.style.backgroundColor="Honeydew"   
     }
-
     if (p3v === 0) {
         p3 = document.getElementById("p3")
         p3.style.backgroundColor="red"
