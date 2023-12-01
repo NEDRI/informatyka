@@ -60,4 +60,5 @@ function aktualizuj(p1f){
     p1p = parseInt(p1i)
     p1 = document.getElementById("p1")
     p1.innerHTML=p1p
+    braki()
 }
