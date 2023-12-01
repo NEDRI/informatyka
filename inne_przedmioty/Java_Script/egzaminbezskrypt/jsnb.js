@@ -87,11 +87,9 @@ function aktualizujp4(p1f){
     braki()
 }
 i = 0
-function zamow(prod){
-    console.log(prod)
-    i = i +1
-    console.log(i)
-    idz = document.getElementById("idz")
-    idz.innerHTML= "Zamówienie nr: " + i + " Produkt: " + prod
-    
+function zamow(prod) {
+    i++;
+    linika = document.createElement('p');
+    linika.textContent = "Zamówienie nr: "+ i +" Produkt: "+ prod;
+    document.body.appendChild(linika);
 }
