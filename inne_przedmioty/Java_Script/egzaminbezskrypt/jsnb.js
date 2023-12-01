@@ -52,8 +52,8 @@ function braki(){
         p4 = document.getElementById("p4")
         p4.style.backgroundColor="yellow"
     } else {
-        p1 = document.getElementById("p1")
-        p1.style.backgroundColor="Honeydew"   
+        p4 = document.getElementById("p4")
+        p4.style.backgroundColor="Honeydew"   
     }
 
     
