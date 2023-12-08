@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Galeria</title>
     <link rel="stylesheet" href="styl2.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,15 +32,15 @@
             </table>
         </section>
         <section id="panelPrawy">
-            <button type="button" onclick=>prev</button>
+            <button type="button" onclick=prz()>prev</button>
             <img id="glowne" src="1.jpg" alt="galeria" />
-            <button type="button" onclick=>next</button>
+            <button type="button" onclick=na()>next</button>
             <hr />
-            <img src="1.jpg" alt="miniatura" onclick= />
-            <img src="2.jpg" alt="miniatura" onclick= />
-            <img src="3.jpg" alt="miniatura" onclick= />
-            <img src="4.jpg" alt="miniatura" onclick= />
-            <img src="5.jpg" alt="miniatura" onclick= />
+            <img id="1" src="1.jpg" alt="miniatura" onclick=przel(1) />
+            <img id="2" src="2.jpg" alt="miniatura" onclick=przel(2) />
+            <img id="3" src="3.jpg" alt="miniatura" onclick=przel(3) />
+            <img id="4" src="4.jpg" alt="miniatura" onclick=przel(4) />
+            <img id="5" src="5.jpg" alt="miniatura" onclick=przel(5) />
         </section>
     </main>
     <footer>
