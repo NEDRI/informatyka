@@ -1,0 +1,56 @@
+INNER JOIN ||  rekordy 4
+Luzdie			Umowy
+id	imie		id	rok	id_ludzie
+1	jan		1	2000	1
+2	paweł		2	1999	2
+3	adam		3	1899	1
+4	franek		4	2010	3
+5	robert		5	2020	7
+
+select productname, categoryname from products
+inner join categories on products.categoryid = categories.categoryid
+
+1) SELECT (Quantity*price) as fullprice, ProductName, OrderID FROM OrderDetails
+inner join products on OrderDetails.ProductID = products.productid
+
+2) select productname, sum(fullprice) from (SELECT (Quantity*price) as fullprice, ProductName, OrderID FROM OrderDetails
+inner join products on OrderDetails.ProductID = products.productid
+order by productname)
+group by productname
+
+3) select cena, orderid, customername form (select * from (select sum(cena) as cena, orderid from(
+inner join products on products.productid = OrderDetails.ProductID
+order by orderid)
+group by orderid) as abc
+inner join orders on order.orderid = abc.orderid)
+as abcd
+inner join customers on
+nie działa, nie szkończone
+
+---------------------------------------------------------------
+LEFT JOIN >||  rekordy 5
+Luzdie			Umowy
+id	imie		id	rok	id_ludzie
+1	jan		1	2000	1
+2	paweł		2	1999	2
+3	adam		3	1899	1
+4	franek		4	2010	3
+5	robert		5	2020	7
+
+RITGHT JOIN ||<  rekordy 5
+Luzdie			Umowy
+id	imie		id	rok	id_ludzie
+1	jan		1	2000	1
+2	paweł		2	1999	2
+3	adam		3	1899	1
+4	franek		4	2010	3
+5	robert		5	2020	7
+
+FULL OUTHER JOIN >||<  rekordy 25
+Luzdie			Umowy
+id	imie		id	rok	id_ludzie
+1	jan		1	2000	1
+2	paweł		2	1999	2
+3	adam		3	1899	1
+4	franek		4	2010	3
+5	robert		5	2020	7
