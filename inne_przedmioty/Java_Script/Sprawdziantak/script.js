@@ -1,6 +1,6 @@
 function arytmetyczny(){
-    pierwsza = (document.getElementById('arytmetycznypier').value);
-    ruz = (document.getElementById('arytmetycznyruz').value);
+    pierwsza =parseFloat(document.getElementById('arytmetycznypier').value);
+    ruz =parseFloat(document.getElementById('arytmetycznyruz').value);
     
     tab = [];
     for (i = 0; i < 5; i++) {
@@ -10,8 +10,8 @@ function arytmetyczny(){
     document.getElementById('arytmetycznyOUT').innerHTML = tab.join(', ');
 }
 function geometryczny(){
-    var geometrycznypier = (document.getElementById('geometrycznypier').value);
-    var pierwszailoraz = (document.getElementById('pierwszailoraz').value);
+    var geometrycznypier =parseFloat(document.getElementById('geometrycznypier').value);
+    var pierwszailoraz =parseFloat(document.getElementById('pierwszailoraz').value);
 
     tab = [];
     for (var i = 0; i < 5; i++) {
