@@ -14,18 +14,38 @@ function zad5(){
     alert('Data ostatniej modyfikacji: ' + document.lastModified);
 }
 function zad6(){
-    var dlugosc = document.getElementById('dlugosc').value;
-    var szerokosc = document.getElementById('szerokosc').value;
-    var pole = dlugosc * szerokosc;
+    dlugosc = document.getElementById('dlugosc').value;
+    szerokosc = document.getElementById('szerokosc').value;
+    pole = dlugosc * szerokosc;
     document.getElementById('wynik').innerHTML = 'Pole prostokata: ' + pole;
 }
 function zad7(){
-    var currentTime = new Date();
-    var hours = currentTime.getHours();
-    var minutes = currentTime.getMinutes();
-    var seconds = currentTime.getSeconds();
+    currentTime = new Date();
+    hours = currentTime.getHours();
+    minutes = currentTime.getMinutes();
+    seconds = currentTime.getSeconds();
     console.log(hours + ':' + minutes + ':' + seconds)
     document.getElementById('czas').innerHTML = hours + ':' + minutes + ':' + seconds;
 }
 setInterval(zad7, 10)
-
+//zad8
+function wstecz(){
+    window.history.back();
+}
+function dalej(){
+    window.history.forward();
+}
+//zad9
+function host(){
+    hostz = window.location.hostname;
+    console.log(hostz)
+    alert(hostz)
+}
+//zad10
+function protokul(){
+    alert('Nazwa protokolu: ' + window.location.protocol);
+}
+//zad11
+function numport(){
+    alert('Numer portu: ' + window.location.port);
+}
