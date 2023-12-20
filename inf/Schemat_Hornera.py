@@ -15,8 +15,7 @@ def main():
     wynik = horner(wspolczynniki, stopien, argument)
 
     print(f"W({argument}) = {wynik}")
-
-    # Usunięcie tablicy wspolczynnikow (zgodnie z K9)
+    
     del wspolczynniki
 
 if __name__ == "__main__":
