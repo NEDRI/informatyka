@@ -7,6 +7,6 @@ def funkcja(n):
         return 0.5
     return -funkcja(n-1) * funkcja(n-2)
 
-n = int(input("Podaj numer wyrau ciagu: "))
+n = int(input("Podaj numer wyrazu ciagu: "))
 wartosc=funkcja(n)
 print(f"{n} wyraz ciagu ma wartosc {wartosc}")

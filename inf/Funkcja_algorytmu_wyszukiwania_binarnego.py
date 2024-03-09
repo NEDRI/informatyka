@@ -24,4 +24,4 @@ pozycja = wyszukaj(tablica, szukana_liczba)
 if pozycja != -1:
     print(f"Liczba {szukana_liczba} jest w {pozycja}")
 else:
-    print("nie znalazlo")
+    print("nie znalazło")

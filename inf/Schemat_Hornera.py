@@ -8,7 +8,7 @@ def main():
     wsp = [0] * (stopien + 1)
     
     for i in range(stopien + 1):
-        wsp[i] = int(input(f"Podaj wspolczynnik stojacy przy potedze {stopien - i}: "))
+        wsp[i] = int(input(f"Podaj wspołczynnik stojacy przy potedze {stopien - i}: "))
     
     argument = int(input("Podaj argument: "))
     
