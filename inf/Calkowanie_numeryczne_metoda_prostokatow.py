@@ -1,3 +1,4 @@
+#https://github.com/PiskorowskiJakub/programming-course-cpp/blob/main/2-algorytmika/2-7-algorytmy-iteracyjne/2-7-04-calkowanie-numeryczne/README.md
 def f(x):
     return x * x + x + 2 
 def oblicznie_pola(a,b,n):
