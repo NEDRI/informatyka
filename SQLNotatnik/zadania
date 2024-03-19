@@ -5,7 +5,7 @@ SELECT offices.officeCode,offices.city , COUNT(employees.employeeNumber) FROM of
 INNER JOIN employees ON offices.officeCode = employees.officeCode
 GROUP BY offices.officeCode 
 ORDER BY offices.city ASC;
-zad 3:
+zad 2:
 SELECT employees.firstName,employees.firstName FROM offices 
 INNER JOIN employees ON offices.officeCode = employees.officeCode
 GROUP BY offices.officeCode 
