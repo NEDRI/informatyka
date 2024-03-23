@@ -1,0 +1,12 @@
+zad 4:
+SELECT jobTitle, COUNT(employeeNumber) FROM employees GROUP BY jobTitle; 
+zad 1:
+SELECT offices.officeCode,offices.city , COUNT(employees.employeeNumber) FROM offices
+INNER JOIN employees ON offices.officeCode = employees.officeCode
+GROUP BY offices.officeCode 
+ORDER BY offices.city ASC;
+zad 2:
+SELECT employees.firstName,employees.firstName FROM offices 
+INNER JOIN employees ON offices.officeCode = employees.officeCode
+GROUP BY offices.officeCode 
+ORDER BY COUNT(employees.employeeNumber) DESC; 
