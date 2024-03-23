@@ -1,16 +1,23 @@
-const http = require("http");
+const express = require('express');
+const phpExpress = require('php-express')();
 
-const host = 'localhost';
-const port = 8000;
+const app = express();
 
-const requestListener = function (req, res) {
-    res.setHeader("Content-Type", "text/html");
-    res.writeHead(200);
-    res.end(`<html><body><h1>This is HTML</h1></body></html>`);
-};
+// Set up PHP rendering engine
+app.engine('php', phpExpress.engine);
+app.set('view engine', 'php');
+app.set('views', __dirname);
 
-const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+// Handle PHP files
+app.all(/.+\.php$/, phpExpress.router);
+
+// Set up a basic route
+app.get('/', (req, res) => {
+    res.send('Hello World from Express!');
 });
 
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
