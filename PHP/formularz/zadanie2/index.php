@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>Formularz informacji o samochodzie</h2>
+    <img src="auto.jpg">
     <form action="" method="post">
         <label>Marka:</label><br>
         <input type="radio" id="toyota" name="Marka" value="Toyota">
