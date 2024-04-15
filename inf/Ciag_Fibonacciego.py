@@ -12,6 +12,8 @@ def zad1():
     n = 50
     print(f"Wartość {n}-tego wyrazu ciągu Fibonacciego wynosi: {zad1(n)}\n")
 def zad2():
-    print("kaczka")
-
+    def zad2(n):
+        print("kaczka")
+    
 zad1()
+zad2()
