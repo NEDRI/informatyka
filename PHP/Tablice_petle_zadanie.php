@@ -14,6 +14,7 @@ if ($tablica[$i] >= 18){
     $WiekszeOd18[$i] = $tablica[$i];
     $liczbaW++;
 }
+
 }
 echo "wieksze od 18: $liczbaW <br>";
 #echo "wieksze od 18: ".implode(",", $WiekszeOd18);
