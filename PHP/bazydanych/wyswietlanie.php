@@ -18,14 +18,14 @@ try {
 }
 echo "<br>";
 
-$sql = "SELECT * FROM samochody";
+$sql = "SELECT  * FROM samochody ORDER BY PRZEBIEG;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<table>";
-    echo "<tr><th>MARKA</th><th>TYP</th><th>KOLOR</th></tr>";
+    echo "<tr><th>MARKA</th><th>TYP</th><th>KOLOR</th><th>PRZEBIEG</th></tr>";
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["MARKA"] . "</td><td>" . $row["TYP"] . "</td><td>" . $row["KOLOR"] . "</td></tr>";
+        echo "<tr><td>" . $row["MARKA"] . "</td><td>" . $row["TYP"] . "</td><td>" . $row["KOLOR"] . "</td><td>".$row["PRZEBIEG"]."</td></tr>";
     }
     echo "</table>";
 } else {
