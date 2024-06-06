@@ -15,7 +15,7 @@ def polozenie(d, R, r):
     elif d == abs(R - r):
         return "Styczne wewnetrznie"
     elif abs(R - r) < d < R + r:
-        return "Przecinajace sis"
+        return "Przecinajace sie"
     elif d > R + r:
         return "Rozlaczne"
     elif d < abs(R - r):
@@ -28,13 +28,15 @@ b = (4,1)
 c = (3,2)
 d = (1,4)
 
-ck1 = srodek(*a,*b)
-ck2 = srodek(*c,*d)
+centrumKola1 = srodek(*a,*b)
+centrumKola2 = srodek(*c,*d)
 
-print("K1:", ck1,promien(*a,*b,*ck1))
-print("K2:", ck2,promien(*c,*d,*ck2))
+promien1 = promien(*a,*b,*centrumKola1)
+promien2 = promien(*c,*d,*centrumKola2)
 
-print(dystans(*ck1,*ck2))
+print("K1:", centrumKola1, "R:" , promien1)
+print("K2:", centrumKola2,"R:" , promien2)
 
-print(polozenie(dystans(*ck1,*ck2),promien(*a,*b,*ck1),promien(*c,*d,*ck2)))
+print("Dystans: ",dystans(*centrumKola1,*centrumKola2))
 
+print(polozenie(dystans(*centrumKola1,*centrumKola2),promien1,promien2))
