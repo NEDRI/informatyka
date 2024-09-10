@@ -32,11 +32,11 @@
         </form>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $servername = "localhost";
+            $host = "localhost";
             $username = "root";
             $password = "";
             $dbname = "kwiaciarnia";
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
+            $conn = mysqli_connect($host, $username, $password, $dbname);
 
             if (!$conn) {
                 die("Connection failed: " . mysqli_connect_error());
