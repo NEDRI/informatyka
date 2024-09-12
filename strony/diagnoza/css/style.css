@@ -1,7 +1,7 @@
 body{
     margin: 0;
     color:black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +82,7 @@ header nav a{
 }
 
 header nav a li{
-    transition: all 0.3s ease-in ease-in-out
+    transition: all 0.3s ease;
 }
 
 header nav a:first-child {
@@ -96,6 +96,8 @@ header nav a:hover li{
 main{
     align-self: center;
     width: 80%;
+    /* cos zle z obliczeniami */
+    height: calc(100% - 150px - 50px);
     background-color: pink;
 }
 
