@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+#a{
+    border-style: solid;
+    border-width: 2px;
+    width:50px ;
+    height: 55px;
+    background-color: orange;
+    float: right;
+}
+
+#b{
+    background-color:cadetblue;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#c{
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 500px;
+
+}
+
+#czdjecia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#d{
+    background-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
