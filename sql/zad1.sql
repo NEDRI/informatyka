@@ -17,7 +17,7 @@ INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID)
 INNER JOIN OrderDetails ON Orders.OrderID = OrderDetails.OrderID)
 INNER JOIN Products ON OrderDetails.ProductID = Products.ProductID
 GROUP BY Customers.CustomerID, Customers.CustomerName
-ORDER BY SUM(OrderDetails.Quantity * Products.Price) DESC;
+ORDER BY SUM(OrderDetails.Quantity * Products.Price) ASC;
 
 zad 1
 SELECT COUNT(*) AS IloscZamowien
