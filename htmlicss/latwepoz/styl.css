@@ -6,6 +6,7 @@ body {
     background-color: aqua;
     width:100vw;
     height: 10vw;
+    display: flex;
 }
 
 #f2 {
