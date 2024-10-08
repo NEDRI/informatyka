@@ -7,9 +7,6 @@ function zie(){
 function cze(){
     document.getElementById("txt").style.color = "red"    
 }
-window.onload = function() {
-    document.body.style.backgroundColor = "red";
-};
 
 elements = document.getElementsByClassName("tak")
 function tak(elements){
@@ -17,3 +14,11 @@ function tak(elements){
         elements[i].style.color = "purple";
     }
 };
+
+function rob(){
+    r=document.getElementById("r").value
+    g=document.getElementById("b").value
+    b=document.getElementById("b").value
+
+    document.body.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;
+}
