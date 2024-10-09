@@ -4,32 +4,24 @@ $user = "root";
 $pass = "";
 $db = "tak";
 
+$conn = new mysqli($host, $user, $pass, $db);
 
-try {
-    $conn = new mysqli($host, $user, $pass, $db);
-    
-    if (!$conn) {
-        echo"nie dziala";
-    } else {
-        echo "dziala";
-    }
-} catch (Exception) {
-    echo "baza padla";
+if ($conn->connect_error) {
+    die("Błąd połączenia: " . $conn->connect_error);
 }
-echo "<br>";
 
-$sql = "SELECT  * FROM samochody ORDER BY PRZEBIEG;";
+$sql = "SELECT MARKA, TYP, KOLOR, PRZEBIEG FROM samochody ORDER BY PRZEBIEG";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    echo "<table>";
-    echo "<tr><th>MARKA</th><th>TYP</th><th>KOLOR</th><th>PRZEBIEG</th></tr>";
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["MARKA"] . "</td><td>" . $row["TYP"] . "</td><td>" . $row["KOLOR"] . "</td><td>".$row["PRZEBIEG"]."</td></tr>";
+if ($result && $result->num_rows > 0) {
+    echo "<table><tr><th>MARKA</th><th>TYP</th><th>KOLOR</th><th>PRZEBIEG</th></tr>";
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr><td>{$row['MARKA']}</td><td>{$row['TYP']}</td><td>{$row['KOLOR']}</td><td>{$row['PRZEBIEG']}</td></tr>";
     }
     echo "</table>";
 } else {
-    echo "brak wyniku";
+    echo "Brak wyników";
 }
 
-?>
+$conn->close();
+?>;
