@@ -23,5 +23,44 @@ if ($result && $result->num_rows > 0) {
     echo "Brak wyników";
 }
 
+
+
+
+$konn = new mysqli($host, $user,$pass,$db);
+if($konn->connect_error){
+    die($konn->connect_errno);
+};
+
+$psql = "SELECT MARKA, TYP, KOLOR, PRZEBIEG FROM samochody ORDER BY PRZEBIEG";
+$wynik = $konn->query($psql);
+
+if($wynik && $wynik->num_rows>0){
+    echo"<table><tr><th>Te zeczy</th></tr>";
+    while ($te = $wynik->fetch_assoc()) {
+        echo"<th><tr>{$te['cos']}</tr></th>";
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $conn->close();
 ?>;
