@@ -38,7 +38,7 @@ if($wynik && $wynik->num_rows>0){
     echo"<table><tr><th>Te zeczy</th></tr>";
     while ($te = $wynik->fetch_assoc()) {
         echo"<th><tr>{$te['cos']}</tr></th>";
-    };
+    }
 }
 
 
