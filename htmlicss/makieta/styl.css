@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    height: 5%;
+    width: 100%;
+}
+nav img{
+    height: 25px;
+    width: 25px;
+    margin: 25px;
+    border: solid;
+    border-radius: 1px;
+    border-color: red;
+}
+nav a{
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 15px;
+    border: solid;
+    border-radius: 1px;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+main{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+}
+
+#lewo , #prawo{
+    width: 10%;
+    height: 100%;
+}
+#srodek{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#Banner{
+    height: 350px;
+    width: 100%;
+    border: solid;
+    border-radius: 1px;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#podbanner{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contener{
+    height: 80%;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: solid;
+    border-radius: 1px;
+    border-color: blue;
+    display: flex;
+}
+.zdjeciepb{
+    height: 100%;
+    width: 30%;
+    background-color: red;
+}
+.napis{
+    height: 100%;
+    width: 70%;
+}
+
+#tojeszczepod{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+.toten{
+    height: 100%;
+    width: calc(100% /3);
+    border: solid;
+    border-radius: 1px;
+    border-color: blue;
+    margin: 10px;
+}
+.toten button{
+    float: right;
+}
+
+footer{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+#stle , #stre{
+    width: 10%;
+    height: 100%;
+}
+#stce{
+    width: 80%;
+    height: 100%;
+    border: solid;
+    border-radius: 1px;
+    border-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
