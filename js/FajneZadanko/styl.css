@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+}
+
+#d1{
+    width: 50vw;
+    height: 100vw;
+    border: solid;
+    border-radius: 1px;
+    border-color: green;
+}
+#d2{
+    width: 50vw;
+    height: 100vw;
+    border: solid;
+    border-radius: 1px;
+    border-color: yellowgreen;
+}
+
+#obraz{
+    width: 80%;
+    margin: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div id="d1">
+        <input type="number" id="r">
+        <input type="number" id="g">
+        <input type="number" id="b">
+        <button onclick="kolortla()">Zmien tlo</button>
+
+        <input type="number" id="w">
+        <input type="number" id="h">
+        <button onclick="wielkosc()">Zmien wielkosc</button>
+
+        <br>
+        <button onclick="nie()">Niebieski</button>
+        <button onclick="zie()">Zielony</button>
+        <button onclick="cze()">Czerwony</button>
+
+        <br>
+        <label>Rozmiar txt: </label>
+        <input id="rozmiar" type="number" onchange="rozmiar()">
+        
+        <br>
+        <label>strong</label>
+        <input type="radio" id="strong" name="to" onchange="st()">
+        <label>subtle</label>
+        <input type="radio" id="subtle" name="to" onchange="su()">
+        <label>podkreslenie</label>
+        <input type="radio" id="podk" name="to" onchange="podk()">
+        
+        
+
+    </div>
+    <div id="d2">
+        <img id="obraz" src="obrazy/kaczka1.jpg">
+        <ol id="tablica">
+            <li>
+                bobr
+            </li>
+            <li>
+                kaczka
+            </li>
+            <li>
+                slon
+            </li>
+        </ol>
+        <p id="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non urna quis metus accumsan iaculis. Sed semper mauris massa, eget dignissim sem iaculis eget. Fusce gravida facilisis dolor, eu porta orci efficitur ut. Maecenas fermentum lacus nec ligula tristique vestibulum. Vestibulum mi magna, tincidunt nec facilisis et, gravida non odio. Praesent feugiat risus in tellus imperdiet, ut gravida urna imperdiet. Pellentesque pulvinar turpis ut scelerisque rhoncus. Aenean dapibus vulputate nisl, in placerat metus tincidunt sed. Etiam non sodales purus. Integer tempor augue vel ante accumsan, ac ultricies nulla imperdiet. Duis eleifend egestas arcu. Aliquam et arcu egestas leo volutpat dignissim tristique et enim. Nam odio risus, dapibus a lacus nec, luctus scelerisque arcu. Vivamus ultrices, elit vel pulvinar dapibus, risus justo dapibus libero, non lobortis tortor mi a urna. Curabitur pretium magna vel nibh scelerisque mollis.</p>
+    </div>
+</body>
+</html>
