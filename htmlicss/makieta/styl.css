@@ -1,92 +1,111 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
-nav {
+nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    background-color: #f0f0f0;
-    padding: 0 20px;
+    align-items: baseline;
+    height: 5%;
+    width: 100%;
 }
-
-nav img {
+nav img{
     height: 50px;
     width: 50px;
-    margin-right: 25px;
+    margin: 0 25px;
 }
-
-nav a {
+nav a{
     margin: 0 15px;
-    line-height: 50px;
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px solid transparent;
-    padding: 0 10px; 
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+    border: solid;
+    border-radius: 1px;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-
-main {
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#srodek {
+#srodek{
     width: 80%;
 }
 
-#Banner {
+#Banner{
     height: 350px;
     width: 100%;
-    background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    border: solid;
+    border-radius: 1px;
+    border-color: red;
 }
 
-#podbanner {
-    display: flex;
+#podbanner{
+    height: 250px;
+    width: 100%;
+    display: flex;    
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.contener {
-    width: 30%;
+.contener{
+    height: 80%;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: solid;
+    border-radius: 1px;
+    border-color: blue;
     display: flex;
-    border: 1px solid blue;
 }
-
-.zdjeciepb {
+.zdjeciepb{
     width: 30%;
     background-color: red;
 }
-
-.napis {
+.napis{
+    height: 100%;
     width: 70%;
-    padding: 10px;
 }
 
-#tojeszczepod {
+#tojeszczepod{
     display: flex;
+    height: auto;
     justify-content: space-between;
+}
+.toten{
+    height: 100%;
+    width: calc(100% /3);
+    border: solid;
+    border-radius: 1px;
+    border-color: blue;
+    margin: 10px;
+}
+.toten button{
+    float: right;
+}
+
+footer{
+    display: flex;
+    height: 5%;
     width: 100%;
+    justify-content: center;
 }
 
-.toten {
-    width: 48%;
-    padding: 10px;
-    border: 1px solid blue;
-}
-
-footer {
-    height: 50px;
+#stce{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    width: 80%;
+    height: 100%;
+    border: solid;
+    border-radius: 1px;
+    border-color: yellowgreen;
 }
