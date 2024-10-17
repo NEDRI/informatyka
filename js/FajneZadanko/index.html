@@ -9,13 +9,19 @@
 </head>
 <body>
     <div id="d1">
-        <input type="number" id="r">
-        <input type="number" id="g">
-        <input type="number" id="b">
+        <label for="r">Red:</label>
+        <input type="number" id="r" value="0" min="0" max="255">
+        <label for="g">Green:</label>
+        <input type="number" id="g" value="0" min="0" max="255">
+        <label for="b">Blue:</label>
+        <input type="number" id="b" value="0" min="0" max="255">
         <button onclick="kolortla()">Zmien tlo</button>
+        <br>
 
-        <input type="number" id="w">
-        <input type="number" id="h">
+        <label for="w">Width:</label>
+        <input type="number" id="w" min="0">
+        <label for="h">Height:</label>
+        <input type="number" id="h" min="0">
         <button onclick="wielkosc()">Zmien wielkosc</button>
 
         <br>
@@ -24,34 +30,33 @@
         <button onclick="cze()">Czerwony</button>
 
         <br>
-        <label>Rozmiar txt: </label>
+        <label for="rozmiar">Rozmiar txt:</label>
         <input id="rozmiar" type="number" onchange="rozmiar()">
-        
+
         <br>
         <label>strong</label>
-        <input type="radio" id="strong" name="to" onchange="st()">
-        <label>subtle</label>
-        <input type="radio" id="subtle" name="to" onchange="su()">
+        <input type="radio" id="strong" name="style" onchange="st()">
+        <label>italic</label>
+        <input type="radio" id="italic" name="style" onchange="it()">
         <label>podkreslenie</label>
-        <input type="radio" id="podk" name="to" onchange="podk()">
-        
-        
+        <input type="radio" id="podk" name="style" onchange="podk()">
 
+        <br>
+        <label for="disc">disc</label>
+        <input type="radio" id="disc" name="list-style" onchange="liststyle('disc')">
+        <label for="square">square</label>
+        <input type="radio" id="square" name="list-style" onchange="liststyle('square')">
+        <label for="circle">circle</label>
+        <input type="radio" id="circle" name="list-style" onchange="liststyle('circle')">
+        
     </div>
     <div id="d2">
         <img id="obraz" src="obrazy/kaczka1.jpg">
         <ol id="tablica">
-            <li>
-                bobr
-            </li>
-            <li>
-                kaczka
-            </li>
-            <li>
-                slon
-            </li>
+            <li>bobr</li>
+            <li>kaczka</li>
+            <li>slon</li>
         </ol>
-        <p id="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non urna quis metus accumsan iaculis. Sed semper mauris massa, eget dignissim sem iaculis eget. Fusce gravida facilisis dolor, eu porta orci efficitur ut. Maecenas fermentum lacus nec ligula tristique vestibulum. Vestibulum mi magna, tincidunt nec facilisis et, gravida non odio. Praesent feugiat risus in tellus imperdiet, ut gravida urna imperdiet. Pellentesque pulvinar turpis ut scelerisque rhoncus. Aenean dapibus vulputate nisl, in placerat metus tincidunt sed. Etiam non sodales purus. Integer tempor augue vel ante accumsan, ac ultricies nulla imperdiet. Duis eleifend egestas arcu. Aliquam et arcu egestas leo volutpat dignissim tristique et enim. Nam odio risus, dapibus a lacus nec, luctus scelerisque arcu. Vivamus ultrices, elit vel pulvinar dapibus, risus justo dapibus libero, non lobortis tortor mi a urna. Curabitur pretium magna vel nibh scelerisque mollis.</p>
+        <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo praesentium qui eligendi. Odit accusantium tenetur, eum esse sapiente minus dolor nesciunt amet, at, qui iste pariatur? Reiciendis, amet excepturi.</p>
     </div>
-</body>
 </html>
