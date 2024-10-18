@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>folmatowanie</title>
+    <link rel="stylesheet" href="styl2.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="banner">
+        <h1>folmatowanie dokumentów HTML</h1>
+    </header>
+
+    <section id="górny">
+        <section id="lewy">
+            <h2>ksty hobby</h2>
+            <ul>
+                <li>muzyka</li>
+                <li>ksiąski</li>
+                <ol>
+                    <li>góry</li>
+                    <li>jeziora</li>
+                    <li>rower</li>
+                </ol>
+                <li>turystyka</li>
+            </ul>
+        </section>
+        <section id="srodek">
+            <h2>rozgład dnia</h2>
+            <table>
+                <tr>
+                    <th>rozgład dnia</th>
+                    <th>obowiąski</th>
+                </tr>
+                <tr>
+                    <td>rano</td>
+                    <td>nauka</td>
+                </tr>
+                <tr>
+                    <td>w południe</td>
+                    <td>zajęcia</td>
+                </tr>
+                <tr>
+                    <td>popołudnie</td>
+                    <td rowspan="2">hobby</td>
+                </tr>
+                <tr>
+                    <td>wieczór</td>
+                </tr>
+            </table>
+        </section>
+        <section id="prawy">
+            <img src="arkE1419styczen/pliki2/tekst.png" alt="tekst">
+        </section>
+    </section>
+
+    <section id="dolny">
+        <p>rozmiar tekstu procentach</p><input id="rozmiar" type="number">%<br>
+        <select id="lista">
+            <option value="normal">prosty</option>
+            <option value="italic">kursywa</option>
+        </select><br>
+        <p>jakim kolorem? wybierz przycisk</p><br>
+        <input type="button" id="i" onclick="red()">
+        <input type="button" id="g" onclick="green()">
+        <input type="button" id="b" onclick="blue()"><br>
+        <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae debitis accusamus recusandae impedit nulla suscipit blanditiis illo officia veniam? Earum tenetur ullam, accusantium eligendi quaerat maiores dolore molestiae quae!</p>
+    </section>
+    <footer id="stopka">
+        <p>zajoł się: <em>000000000000000</em></p><br>
+        <a href="https://formatowanie.pl">odwiedz</a>
+    </footer>
+</body>
+</html>
