@@ -86,6 +86,7 @@ function zad8(){
     }
 }
 
+/*
 function zad8() {
     imie = document.getElementById("imie8").value;
     jan = document.getElementById("jan");
@@ -111,3 +112,4 @@ function zad8() {
             break;
     }
 }
+*/
