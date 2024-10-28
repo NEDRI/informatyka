@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="zad1">
+        <h1>Zadanie 1</h1>
+        <p>Napisz skrypt, który przy przesuwaniu suwakiem zmieniejszy/zwiększy rozmiar tekstu(zakres od 0 do 40px)</p>
+        0px<input id="rozmiarTxt" onchange="zad1()" type="range" min="0" max="40">40px<br>
+        <p id="tekst">To jest przykładowy tekst</p>
+    </section>
+    <section id="zad2">
+        <h1>Zadanie 2</h1>
+        <p>Napisz skrypt, który pobierze wartości r, g i b z pól tekstowych, a następnie na wciśnięcie przycisku zmieni
+            kolor tła</p>
+        R:<input id="r" type="text">
+        G:<input id="g" type="text">
+        B:<input id="b" type="text">
+        <input type="button" onclick="zad2()" value="Zmień kolor tła">
+    </section>
+    <section id="zad3">
+        <h1>Zadanie 3</h1>
+        <p>Skrypt po wybraniu elementu z listy zmieni rodzaj obramowania tekstu</p><br>
+        Rodzaj ramki:
+        <select id="ramka" onchange="zad3()">
+            <option value="solid">Solid</option>
+            <option value="dotted">Dotted</option>
+            <option value="dashed">Dashed</option>
+            <option value="double">Double</option>
+            <option value="none">None</option>
+        </select><br><br>
+        <p id="obramowany">Obramowany tekst</p>
+
+    </section>
+    <section id="zad4">
+        <h1>Zadanie 4</h1>
+        <p>Skrypt zasymuluje działanie stacji benzynowej, klient wybiera rodzaj paliwa oraz poda litry, na końcu skrypt
+        poda ile ktoś zapłacił</p><br>
+        Pb95 (6.00zł):<input id="pd95" name="paliwo" value="6.00" type="radio">
+        Pb98 (6.59zł)<input id="pd98" name="paliwo" value="6.59" type="radio">
+        On (6.08zł)<input id="On" name="paliwo" value="6.08" type="radio">
+        LPG (2.94zł)<input id="LPG" name="paliwo" value="2.94" type="radio"><br><br>
+        Ile litrów: <input type="number" id="litry"> <button onclick="zad4()">Zatankuj!</button><br>
+        <p id="wynik">Płacisz: </p>
+    </section>
+<script src="script.js"></script>
+</body>
+
+</html>
