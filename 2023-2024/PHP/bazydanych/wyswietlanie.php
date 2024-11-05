@@ -41,26 +41,5 @@ if($wynik && $wynik->num_rows>0){
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $conn->close();
 ?>;
