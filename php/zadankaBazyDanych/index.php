@@ -12,14 +12,15 @@ if ($conn->connect_error) {
 
 echo "zadanie 1 <br>";
 
-$sql = "SELECT imie, nazwisko FROM `uczen` INNER JOIN klasa on klasa.id = uczen.id_klasa WHERE klasa.numer = 3 ORDER by nazwisko; ";
+$sql =
+    "SELECT imie, nazwisko FROM `uczen` INNER JOIN klasa on klasa.id = uczen.id_klasa WHERE klasa.numer = 3 ORDER by nazwisko; ";
 $result = $conn->query($sql);
 
 if ($result && $result->num_rows > 0) {
     echo "<ol>";
     while ($row = $result->fetch_assoc()) {
-        echo "<li>{$row['imie']} {$row['nazwisko']}</li>";
-    } 
+        echo "<li>{$row["imie"]} {$row["nazwisko"]}</li>";
+    }
     echo "</ol>";
 } else {
     echo "Brak wyników";
@@ -44,15 +45,15 @@ echo "<br> zadanie 3 <br>";
 
 $queryNunLudzi = "SELECT COUNT(*) FROM (
     SELECT imie FROM uczen WHERE imie LIke '%a'
-    UNION 
+    UNION
     SELECT imie FROM nauczyciel WHERE imie LIke '%a'
     ) as liczba;";
 $stmtLudzie = $conn->query($queryNunLudzi);
 
 if ($stmtLudzie && $stmtLudzie->num_rows > 0) {
     while ($row = $stmtLudzie->fetch_assoc()) {
-        echo "{$row['COUNT(*)']}";
-    } 
+        echo "{$row["COUNT(*)"]}";
+    }
 } else {
     echo "Brak wyników";
 }
@@ -60,14 +61,12 @@ if ($stmtLudzie && $stmtLudzie->num_rows > 0) {
 echo "<br> zadanie 4 <br>";
 
 $queryDodanieOceny = "UPDATE ocena SET ocena = ocena + 1";
-echo mysqli_query($conn,$queryDodanieOceny);
+echo mysqli_query($conn, $queryDodanieOceny);
 
 echo "<br> zadanie 5 <br>";
-$queryUsuwanieNauczyciela = "DELETE FROM nauczyciel WHERE data_urodzenia <= '1950-00-00';";
+$queryUsuwanieNauczyciela =
+    "DELETE FROM nauczyciel WHERE data_urodzenia <= '1950-00-00';";
 echo mysqli_query($conn, $queryUsuwanieNauczyciela);
-
-
-
 
 $conn->close();
 ?>

@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+
+a, a:active, a:link, a:visited {
+    color:rgb(47, 47, 47);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+nav ul li {
+    width: 125px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    background-image: url("../assets/banner/kaczka3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner button {
+    height: 65px;
+    font-size: 65px;
+}
+
+.banner button:first-child {
+    margin-right: auto;
+}
+
+.crew-list {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.crew-element {
+    width: calc((100% / 3) - (80px / 3));
+    height: 80%;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.crew-element:first-child {
+    margin-left: 25px;
+}
+
+.crew-element:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.crew-element img {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.crew-element p {
+    width: calc((100% / 3) * 2);
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sub-plans {
+    width: 80%;
+    height: calc(100% - 350px - 250px - (4 * 15px));
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.sub-element {
+    width: calc((100% / 3) - (30px / 3));
+    height: 100%;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-element:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sub-element h2 {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sub-element p {
+    font-size: 20px;
+    width: 100%;
+    height: calc(100% - 45px - 50px);
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sub-element button {
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+footer {
+    width: 80%;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

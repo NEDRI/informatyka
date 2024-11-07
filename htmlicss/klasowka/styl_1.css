@@ -1,0 +1,42 @@
+body {
+    background-color:#F6E5DC;
+    font-family: Verdana;
+}
+header{
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+#lewyiprawy{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#lewy{
+    width: 60%;
+}
+img{
+    height: 350px;
+}
+#prawy{
+    font-size: 150%;
+    margin: 70px;
+}
+#dolny{
+    background-color:#D0B6A8;
+    text-align: center;
+}
+#dolnyZawartosc{
+    margin: 30px;
+}
+footer{
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+}
+.przycisk{
+    margin: 5px;
+    background-color:  #2F180C;
+    color: khaki;
+}
