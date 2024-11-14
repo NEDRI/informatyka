@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "VariableFont";
+    src: url("fonts/EduAUVICWANTPre-VariableFont_wght.ttf");
+}
+
 body {
     margin: 0;
+    font-family: "VariableFont";
+    background-image: linear-gradient(150deg,rgb(255, 255, 255),rgb(48, 187, 215));
 }
 
 a, a:active, a:link, a:visited {
@@ -8,12 +15,18 @@ a, a:active, a:link, a:visited {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100px;
     box-sizing: border-box;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 0px;
+    border-bottom-left-radius: 45px ;
+    border-bottom-right-radius: 45px ;
 }
 
 .logo {
@@ -29,6 +42,10 @@ header {
 .logo img {
     width: 65px;
     height: 65px;
+    border: solid;
+    border-width: 0px;
+    border-radius: 100%;
+
 }
 
 nav, ul {
@@ -47,11 +64,29 @@ nav ul li {
     font-size: 20px;
 }
 
+nav ul li::after{
+    content: "▼";
+    margin-left: 5px;
+}
+
+nav ul li:hover::after{
+    content: "◀";
+    margin: 5px;
+    color: white;
+}
+nav ul li:hover{
+    background-color: rgb(0, 117, 109);
+}
+nav ul li:hover a{
+    color: white;
+}
+
 nav ul li:not(:last-child) {
     margin-right: 15px;
 }
 
 main {
+    padding-top: 110px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -67,16 +102,29 @@ main {
     align-items: center;
     width: 100%;
     height: 350px;
-    margin-top: 15px;
     background-image: url("../assets/banner/kaczka3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 45px;
 }
 
-.banner button {
+.banner button{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
     height: 65px;
     font-size: 65px;
+    cursor: pointer;
+    transition:transform 0.3s ease-in-out;
+}
+
+.banner button:hover{
+    color: rgb(255, 255, 255, 0.70);
+    transform: scale(0.8);
 }
 
 .banner button:first-child {
