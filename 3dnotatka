@@ -1,0 +1,74 @@
+Typy
+Postawoe: 
+- FDM, SL(zywiczna) Filment w nici na szpuli. 
+Najceszciej wykorzystywanie są PLA(w skład wchodzi Kukurydza i cukier), Nie jest toksyczny(nie udowodnione) 180C - 220C sie topi, Szary-Brozoway Czarny jes stardardowy, Dysza (Miedz)
+ABS 230C - 260C (jest toksyczny) Dysza(Stal nie rdzewna)
+PTG 220C - 260C (delikatnie toksyczny) Dysza(Stal nie rdzewna)
+
+żle dobrany materiał może rozerwać dysze 
+też trzeba zobaczyc Temperature i substacje (powłoki)
+
+- Druk żywiczny
+Reszta: 
+SLS(To z proszkiem),
+Resin Casting(Czyli wypełanie formy substacja), 
+PolyJet(Nakład tylko tyle żywicy ile potrzebuje. 
+Nakład tyle potrzebuje w orduznienu od SL),
+EMB (Strzela skupioną wiązką laseru w Metalowy porszek),
+Bio printing (Drukowanie tkanek),
+
+Przestrzeni do druku:
+- Duża przestrzeń (opcjonalne)
+- Wentylacja
+- Nic ma nie wpływać na drukarke
+- Stała temperatura na drukarke
+
+Podstawowa budowa:
+1 Głowica - Przetacz filament
+2 Stoł grzewczy - żeby na nim drukować 
+3 Rama - struktóra
+4 Prowadnice 
+5 Hotend - topi materiał 
+6 Ekstruder - podaje materiał dalej 
+Cofanie matertału nazywa się retrakcja
+7 Panel kontrolny
+
+Proces druku FDM:
+filamnt nakładny na stół warstwa po warstwie
+jak nie zaczyna się od stołu to tworzy potory
+
+Problemy druku np. FDM
++ odklejanie sie warst: 
+- druk nie wyjdzie 
+- zniekształcenie (też przez: temperature, źle wyporzomowane osie)
++ Nitkowanie żeby zapobiedz trzeba ustawić retrakcje (cofniecie materiału do tyłu w dyszy)
++ Żeby przystawło do stołu używa się: 
+- klej termo aktywnu  w spreju 
+- w slicer ustawić: Brim/Skirt (Tworzenie dodatkowej warstwy podłogi) Skirt (otacza druk) Bring (dodaje dodatkową warstwe szerszą) Raft( to Bring i tylko grubszy)
++ warping czyli rozpadanie się warst:
+- zmiana ustawiń 
+- temperatura
+
+ironing (w slicerze) - prasowanie ostatnich warst (czubkiem rozgrznym prasuje wartwe)
+
+supporty - Daje potpory dla elemntów wiszących (wystawających z figury)
++ stadardowe (sicanki)
++ tree support (Przylegają do tylko konkretne miejsca)
+
+InFill to wypełanie środka druku najczęstrze:
+- Cross
+- Octet
+- Concentric
+- Zig zag
+- Grid + 
+- Cubic +
+- Lines +
+- Triangles +
++ najczesciej korzystane
+
+Drukarka FDM przydatne rzeczy:
+- filamnet sensor (ze jak skonczy sie filamnet to zatrzyma sie)
+- cr touch (mierzenie odleglosc od stolu/wydruku) proces: Poziomowanie
+- Octo print (zdale sterowanie drukarką)
+
+
