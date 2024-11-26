@@ -1,0 +1,11 @@
+SELECT nazwa, cena FROM uslugi
+WHERE cena < 30;
+
+SELECT SUM(uslugi.cena) AS suma_cen_kosmetycznych FROM uslugi
+INNER JOIN kadra ON kadra.id = uslugi.kadra_id
+WHERE uslugi.rodzaj = 'kosmetyczne';
+
+CREATE USER 'kosmetyczka'@'localhost' IDENTIFIED BY 'Kosmet34';
+
+GRANT SELECT, INSERT ON egzamin1.uslugi TO 'kosmetyczka'@'localhost';
+FLUSH PRIVILEGES;

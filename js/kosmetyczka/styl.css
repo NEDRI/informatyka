@@ -1,0 +1,64 @@
+body {
+    font-family: Garamond;
+}
+
+.lewy-block-1 {
+    height: 500px;
+    width: 100%;
+    background-color: lavender;
+}
+
+.lewy-block-2 {
+    height: 300px;
+    width: 100%;
+    background-color: lavender;
+}
+
+.prawy-block-1 {
+    height: 150px;
+    background-color: indigo;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+}
+
+.prawy-block-2 {
+    height: 650px;
+    background-color: lavender;
+    font-size: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: indigo;
+    color: white;
+    text-align: right;
+
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    margin: 10px;
+    padding: 5px;
+}
+
+img:hover {
+    padding: 4px;
+    border: 1px solid indigo;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont-l {
+    width: 25%;
+}
+
+.cont-p {
+    width: 75%;
+}
