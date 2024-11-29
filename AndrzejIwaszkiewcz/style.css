@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    font-family: Montserrat;
+    background-color: #ffffff;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+#headleft{
+    align-content: row;
+    
+}

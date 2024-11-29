@@ -1,0 +1,13 @@
+zapytanie 1:
+INSERT INTO `karty_wedkarskie` (`id`, `imie`, `nazwisko`, `adres`, `data_zezwolenia`, `punkty`) VALUES
+(3,'Grzegorz', 'Niemczyk', 'Gdynia, Batorego 14/5', 'Gdynia, Batorego 14/5', 0);
+
+zapytanie 2: 
+SELECT imie, nazwisko FROM karty_wedkarskie
+WHERE punkty > 20;
+
+zapytanie 3:
+SELECT akwen FROM `lowisko`
+INNER JOIN zawody_wedkarskie on zawody_wedkarskie.Lowisko_id = lowisko.id 
+INNER JOIN karty_wedkarskie on karty_wedkarskie.id = zawody_wedkarskie.Karty_wedkarskie_id 
+WHERE karty_wedkarskie.imie = "Krzysztof" && karty_wedkarskie.nazwisko = "Dobrowolski"; 

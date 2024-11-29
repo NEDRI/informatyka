@@ -1,0 +1,49 @@
+
+body{
+    font-family: Georgia;
+    margin: 0px;
+
+}
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#glowny{
+    background-color: lightblue;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#lewy{
+    background-color: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+}
+
+#srodek, #prawy{
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+}
+
+a{
+    border: solid;
+    border-style: dashed;
+    border-radius: 1px;
+    border-color: dimgray;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}
+
+#dolny{
+    display: flex;
+}

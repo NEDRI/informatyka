@@ -1,0 +1,12 @@
+- odwzorowanie strony na podstawie konceptu graficznego (strona ma być scrollowana)
+- zmiana styli elementów w zależności od stanów, zgodnie z przykładami
+- header przemieszcza się wraz ze scrollem
+- teksty w headerze oraz w przyciskach są zmieniane na pisane dużymi literami za pomocą styli
+- zaimportowano i wykorzystano czcionke Montserrat
+- logiczna struktura katalogowa i nazewnictwo plików
+- struktura witryny zgodna ze standardami HTML5
+- modyfikowanie grafik jedynie za pomocą styli kaskadowych, jeżeli to konieczne
+- uporządkowane style kaskadowe
+- odwoływanie się do struktury, stanów, dzieci i klas w stylach kaskadowych
+- formularz dotacji bazujący o elementy radio podzielone na 3 segmenty
+- stosowanie martwych linków
