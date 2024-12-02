@@ -1,11 +1,11 @@
 <?php
 
-$server = "localhost"
-$user = "root"
-$pass = ""
-$dbname = "wedkowanie"
+$server = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "wedkowanie";
 
-$conn = mysqli_connect($server,$user,$pass,$dbname)
+$conn = mysqli_connect($server,$user,$pass,$dbname);
 
 
 
